@@ -4,7 +4,7 @@ import * as React from 'react'
 import * as AvatarPrimitive from '@radix-ui/react-avatar'
 import { cn } from '@/lib/tw-merge'
 
-const Avatar = React.forwardRef<
+const Root = React.forwardRef<
   React.ElementRef<typeof AvatarPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Root>
 >(({ className, ...props }, ref) => (
@@ -18,7 +18,7 @@ const Avatar = React.forwardRef<
   />
 ))
 
-const AvatarImage = React.forwardRef<
+const Image = React.forwardRef<
   React.ElementRef<typeof AvatarPrimitive.Image>,
   React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Image>
 >(({ className, ...props }, ref) => (
@@ -29,7 +29,7 @@ const AvatarImage = React.forwardRef<
   />
 ))
 
-const AvatarFallback = React.forwardRef<
+const Fallback = React.forwardRef<
   React.ElementRef<typeof AvatarPrimitive.Fallback>,
   React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Fallback>
 >(({ className, ...props }, ref) => (
@@ -43,8 +43,8 @@ const AvatarFallback = React.forwardRef<
   />
 ))
 
-Avatar.displayName = AvatarPrimitive.Root.displayName
-AvatarImage.displayName = AvatarPrimitive.Image.displayName
-AvatarFallback.displayName = AvatarPrimitive.Fallback.displayName
+Root.displayName = AvatarPrimitive.Root.displayName
+Image.displayName = AvatarPrimitive.Image.displayName
+Fallback.displayName = AvatarPrimitive.Fallback.displayName
 
-export { Avatar, AvatarImage, AvatarFallback }
+export { Root, Image, Fallback }

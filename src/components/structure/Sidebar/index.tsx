@@ -3,7 +3,9 @@
 import { IconMenu2, IconSearch } from '@tabler/icons-react'
 import { Collapsible, Logo, Input } from '@/components/ui'
 import { cn } from '@/lib/tw-merge'
-import { MainMenu } from './MainMenu'
+import { PrimaryMenu } from './PrimaryMenu'
+import { Profile } from './Profile'
+import { SecondaryMenu } from './SecondayMenu'
 import { ThemeSwitcher } from './ThemeSwitcher'
 
 function Sidebar() {
@@ -11,7 +13,7 @@ function Sidebar() {
     <Collapsible.Root
       className={cn(
         'z-20 flex flex-col gap-6 border-b border-zinc-200 bg-white p-4',
-        'lg:border-r',
+        'lg:border-r lg:px-5 lg:py-8',
         'dark:border-zinc-700 dark:bg-zinc-900',
       )}
     >
@@ -42,9 +44,15 @@ function Sidebar() {
           <Input.Control id="search" placeholder="Search" />
         </Input.Root>
 
-        <MainMenu />
+        <PrimaryMenu />
 
-        <div className="mt-auto flex flex-col gap-6">secondary menu</div>
+        <div className="mt-auto flex flex-col gap-6">
+          <SecondaryMenu />
+
+          <div className={cn('h-px bg-zinc-200', 'dark:bg-zinc-700')} />
+
+          <Profile />
+        </div>
       </Collapsible.Content>
     </Collapsible.Root>
   )

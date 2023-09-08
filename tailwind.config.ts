@@ -20,18 +20,18 @@ module.exports = {
         app: 'minmax(18rem, 20rem) 1fr',
       },
       keyframes: {
-        'accordion-down': {
+        slideDown: {
           from: { height: 0 },
           to: { height: 'var(--radix-accordion-content-height)' },
         },
-        'accordion-up': {
+        slideUp: {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: 0 },
         },
       },
       animation: {
-        'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out',
+        slideDown: 'slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)',
+        slideUp: 'slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)',
       },
     },
   },

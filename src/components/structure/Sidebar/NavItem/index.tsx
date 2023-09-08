@@ -15,8 +15,8 @@ const navItem = tv({
       'dark:text-zinc-100 dark:group-hover:text-violet-300',
     ),
     icon: cn(
-      'h-5 w-5 text-zinc-500',
-      'group-hover:text-violet-300 dark:text-zinc-100',
+      'h-5 w-5 text-zinc-500 group-hover:text-violet-500',
+      'dark:text-zinc-100 dark:group-hover:text-violet-300',
     ),
   },
 
@@ -24,11 +24,11 @@ const navItem = tv({
     variant: {
       active: {
         text: cn(
-          'text-violet-500 group-hover:text-violet-500',
+          'text-violet-500 group-hover:text-violet-700',
           'dark:text-violet-500 dark:group-hover:text-violet-300',
         ),
         icon: cn(
-          'text-violet-500 group-hover:text-violet-500',
+          'text-violet-500 group-hover:text-violet-700',
           'dark:text-violet-500 dark:group-hover:text-violet-300',
         ),
       },

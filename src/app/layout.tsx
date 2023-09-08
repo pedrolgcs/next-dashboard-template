@@ -30,7 +30,7 @@ export default function RootLayout({
           >
             <Sidebar />
 
-            <main className={cn('max-w-[100vw]', 'lg:col-start-2')}>
+            <main className={cn('max-w-[100vw] p-4', 'lg:col-start-2 lg:p-8')}>
               {children}
             </main>
           </div>

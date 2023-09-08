@@ -29,7 +29,7 @@ function ThemeSwitcher() {
         'inline-flex h-6 w-12 shrink-0 cursor-pointer items-center rounded-full border border-zinc-300 transition duration-200 disabled:cursor-not-allowed disabled:opacity-50',
         'data-[state=checked]:bg-zinc-100 data-[state=unchecked]:bg-zinc-100',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-950 focus-visible:ring-offset-2 focus-visible:ring-offset-white',
-        'dark:border-zinc-700 dark:focus-visible:ring-zinc-700 dark:focus-visible:ring-offset-zinc-950 dark:data-[state=unchecked]:bg-zinc-800',
+        'dark:border-zinc-700 dark:focus-visible:ring-zinc-700 dark:focus-visible:ring-offset-zinc-950 dark:data-[state=checked]:bg-zinc-800',
       )}
     >
       <Switch.Thumb
@@ -39,9 +39,9 @@ function ThemeSwitcher() {
         )}
       >
         {theme === 'dark' ? (
-          <IconSunHigh className="h-4 w-4 text-yellow-400" />
+          <IconSunHigh className="h-4 w-4 text-yellow-400" stroke={3} />
         ) : (
-          <IconMoonStars className="h-4 w-4 text-zinc-600" />
+          <IconMoonStars className="h-4 w-4 text-zinc-600" stroke={2} />
         )}
       </Switch.Thumb>
     </Switch.Root>
