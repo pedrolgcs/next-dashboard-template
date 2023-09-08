@@ -7,7 +7,7 @@ import { cn } from '@/lib/tw-merge'
 
 const Root = AccordionPrimitive.Root
 
-const AccordionItem = React.forwardRef<
+const Item = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Item>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>
 >(({ className, ...props }, ref) => (
@@ -18,7 +18,7 @@ const AccordionItem = React.forwardRef<
   />
 ))
 
-const AccordionTrigger = React.forwardRef<
+const Trigger = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Trigger>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
 >(({ className, children, ...props }, ref) => (
@@ -37,7 +37,7 @@ const AccordionTrigger = React.forwardRef<
   </AccordionPrimitive.Header>
 ))
 
-const AccordionContent = React.forwardRef<
+const Content = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Content>
 >(({ className, children, ...props }, ref) => (
@@ -53,8 +53,8 @@ const AccordionContent = React.forwardRef<
   </AccordionPrimitive.Content>
 ))
 
-AccordionItem.displayName = 'AccordionItem'
-AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName
-AccordionContent.displayName = AccordionPrimitive.Content.displayName
+Item.displayName = 'AccordionItem'
+Trigger.displayName = AccordionPrimitive.Trigger.displayName
+Content.displayName = AccordionPrimitive.Content.displayName
 
-export { Root, AccordionItem, AccordionTrigger, AccordionContent }
+export { Root, Item, Trigger, Content }
