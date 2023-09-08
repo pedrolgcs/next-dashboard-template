@@ -1,8 +1,9 @@
 'use client'
 
-import { IconMenu2 } from '@tabler/icons-react'
-import { Collapsible, Logo } from '@/components/ui'
+import { IconMenu2, IconSearch } from '@tabler/icons-react'
+import { Collapsible, Logo, Input } from '@/components/ui'
 import { cn } from '@/lib/tw-merge'
+import { MainMenu } from './MainMenu'
 import { ThemeSwitcher } from './ThemeSwitcher'
 
 function Sidebar() {
@@ -33,12 +34,17 @@ function Sidebar() {
           'lg:data-[state=closed]:flex',
         )}
       >
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quia
-          amet minus voluptatibus! Repellat beatae impedit voluptate natus. Non
-          assumenda culpa officiis obcaecati dolorem unde vel perspiciatis
-          consequatur iusto tenetur!
-        </div>
+        <Input.Root>
+          <Input.Prefix>
+            <IconSearch className="h-5 w-5 text-zinc-500" />
+          </Input.Prefix>
+
+          <Input.Control id="search" placeholder="Search" />
+        </Input.Root>
+
+        <MainMenu />
+
+        <div className="mt-auto flex flex-col gap-6">secondary menu</div>
       </Collapsible.Content>
     </Collapsible.Root>
   )

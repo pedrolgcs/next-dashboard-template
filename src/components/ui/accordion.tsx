@@ -5,7 +5,7 @@ import * as AccordionPrimitive from '@radix-ui/react-accordion'
 import { ChevronDown } from 'lucide-react'
 import { cn } from '@/lib/tw-merge'
 
-const Accordion = AccordionPrimitive.Root
+const Root = AccordionPrimitive.Root
 
 const AccordionItem = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Item>,
@@ -57,4 +57,4 @@ AccordionItem.displayName = 'AccordionItem'
 AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName
 AccordionContent.displayName = AccordionPrimitive.Content.displayName
 
-export { Accordion, AccordionItem, AccordionTrigger, AccordionContent }
+export { Root, AccordionItem, AccordionTrigger, AccordionContent }
