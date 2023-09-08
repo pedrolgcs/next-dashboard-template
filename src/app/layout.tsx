@@ -1,8 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { Sidebar } from '@/components/structure'
 import { cn } from '@/lib/tw-merge'
-import { Providers } from './providers'
+import { ThemeProvider } from './theme-provider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,23 +18,23 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br">
+    <html lang="pt-br" suppressHydrationWarning>
       <body className={inter.className}>
-        <Providers>
+        <ThemeProvider>
           <div
             className={cn(
-              'min-h-screen bg-zinc-100 text-zinc-900',
+              'min-h-screen bg-white text-zinc-900',
               'lg:grid lg:grid-cols-app',
               'dark:bg-zinc-900 dark:text-zinc-100',
             )}
           >
-            <div>side bar</div>
+            <Sidebar />
 
-            <main className="max-w-[100vw] p-4 lg:col-start-2 lg:px-8 lg:pb-12 lg:pt-8">
+            <main className={cn('max-w-[100vw]', 'lg:col-start-2')}>
               {children}
             </main>
           </div>
-        </Providers>
+        </ThemeProvider>
       </body>
     </html>
   )
