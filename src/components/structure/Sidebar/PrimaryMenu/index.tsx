@@ -1,3 +1,4 @@
+import * as Accordion from '@radix-ui/react-accordion'
 import {
   IconChartLine,
   IconFlag,
@@ -6,7 +7,6 @@ import {
   IconStack2,
   IconUsers,
 } from '@tabler/icons-react'
-import { Accordion } from '@/components/ui'
 import * as NavGroup from '../NavGroup'
 import { NavItem } from '../NavItem'
 
