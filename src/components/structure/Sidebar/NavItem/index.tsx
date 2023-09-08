@@ -15,7 +15,7 @@ const navItem = tv({
       'dark:text-zinc-100 dark:group-hover:text-violet-300',
     ),
     icon: cn(
-      'h-5 w-5 text-zinc-500 group-hover:text-violet-500',
+      'h-5 w-5 text-zinc-700 group-hover:text-violet-500',
       'dark:text-zinc-100 dark:group-hover:text-violet-300',
     ),
   },

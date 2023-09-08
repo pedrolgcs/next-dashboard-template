@@ -22,24 +22,24 @@ function PrimaryMenu() {
           Option 2
         </NavItem>
 
-        <NavGroup.Root title="Projects" icon={IconStack2}>
-          <NavGroup.Item href="#">Slack</NavGroup.Item>
-          <NavGroup.Item href="#">Discord</NavGroup.Item>
-          <NavGroup.Item href="#">Telegram</NavGroup.Item>
+        <NavGroup.Root title="Option 3" icon={IconStack2}>
+          <NavGroup.Item href="#">Option 1</NavGroup.Item>
+          <NavGroup.Item href="#">Option 2</NavGroup.Item>
+          <NavGroup.Item href="#">Option 3</NavGroup.Item>
         </NavGroup.Root>
 
         <NavItem href="#" icon={IconSquareCheck}>
-          Tasks
+          Option 4
         </NavItem>
 
-        <NavGroup.Root title="Reporting" icon={IconFlag}>
-          <NavGroup.Item href="#">Overtime</NavGroup.Item>
-          <NavGroup.Item href="#">Payslip</NavGroup.Item>
-          <NavGroup.Item href="#">Timesheet</NavGroup.Item>
+        <NavGroup.Root title="Option 5" icon={IconFlag}>
+          <NavGroup.Item href="#">Option 1</NavGroup.Item>
+          <NavGroup.Item href="#">Option 2</NavGroup.Item>
+          <NavGroup.Item href="#">Option 3</NavGroup.Item>
         </NavGroup.Root>
 
         <NavItem href="#" icon={IconUsers}>
-          Users
+          Option 6
         </NavItem>
       </nav>
     </Accordion.Root>
