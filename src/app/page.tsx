@@ -1,3 +1,7 @@
 export default function Home() {
-  return <h1>Hello World</h1>
+  return (
+    <article className="prose dark:prose-invert">
+      <h1>Content</h1>
+    </article>
+  )
 }

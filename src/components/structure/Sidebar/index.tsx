@@ -12,8 +12,8 @@ function Sidebar() {
   return (
     <Collapsible.Root
       className={cn(
-        'z-20 flex flex-col gap-6 border-b border-zinc-200 bg-white p-4',
-        'lg:border-r lg:px-5 lg:py-8',
+        'flex flex-col gap-6 border-b border-zinc-200 bg-white p-4',
+        'lg:fixed lg:inset-y-0 lg:w-80 lg:border-r lg:px-5 lg:py-8',
         'dark:border-zinc-700 dark:bg-zinc-900',
       )}
     >
